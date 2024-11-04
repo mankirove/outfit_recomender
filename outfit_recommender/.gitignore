@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.env
+venv/
+*.pkl
+instance/
+static/uploads/
+deepfashion_model.h5
+deepfashion_model.keras
+images.zip
+static/uploads/
+uploaded_image.jpg
