@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Style recomendation</title>
+</head>
+<body>
+    <h1>Uploaded image</h1>
+    <img src="{{ original_image }}" alt="Uploaded image" style="max-width:400px;">
+    
+    <h2>Similar Image</h2>
+    {% for img_path in similar_images %}
+        <img src="{{ img_path }}" alt="Similar Image" style="max-width:200px; margin:10px;">
+    {% endfor %}
+</body>
+</html>

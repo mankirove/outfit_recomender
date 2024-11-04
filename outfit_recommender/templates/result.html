@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recommended Images</title>
+    <style>
+        img {
+            max-width: 200px; 
+            height: auto; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Recommended Images</h1>
+    <ul>
+        {% for image in images %}
+        <li><img src="{{ url_for('static', filename='uploads/' + image) }}" alt="Similar Image"></li>
+        {% endfor %}
+    </ul>
+    <br>
+    <a href="/">Upload another image</a>
+</body>
+</html>
